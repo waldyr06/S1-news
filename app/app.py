@@ -9,10 +9,6 @@ mysql = MySQL(app)
 def home():
     return render_template('politics.html')
 
-@app.route('/menu')
-def menupage():
-    return render_template('page (1).html')
-
 @app.route('/report1')
 def report1_page():
     return render_template('report1.html')
