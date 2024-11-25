@@ -2,7 +2,15 @@
     font-family: "Inter", sans-serif;
     src: url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
 }
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+:root{
+    --TITLE: #1f2123;
+    --SUB: #4f5257;
+    
+
+    --FONTE_PADRAO:"Inter", sans-serif;
+}
 header{
     margin: 0%;
     background-image: radial-gradient(#FFFFFF, #CCCCCC);
@@ -178,4 +186,20 @@ body{
 .S1 {
     font-family: 'Inria Serif', serif;
     font-weight: 100;
+}
+
+.subtitle_report3 {
+    color: var(--SUB);
+
+}
+
+.main_text{
+    width: 600px;
+    font-size: 18px;
+    justify-self: center;
+}
+
+.image{
+    height: 100px;
+    width: 600px;
 }
