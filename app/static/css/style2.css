@@ -2,10 +2,14 @@
     font-family: "Inter", sans-serif;
     src: url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
 }
-h2{
-    background: radial-gradient(circle, #FFFFFF, #C5C5C5);
-    -webkit-background-clip: text;
-    color: transparent;
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root{
+    --TITLE: #1f2123;
+    --SUB: #4f5257;
+    
+
+    --FONTE_PADRAO:"Inter", sans-serif;
 }
 header{
     margin: 0%;
@@ -14,6 +18,7 @@ header{
     width: auto;
 }
 
+
 .Assineja{
     margin-left: 78%;
     margin-top: 0.6%;
@@ -21,6 +26,36 @@ header{
     align-items: center;
 
 }
+
+.search{
+    
+    width: 150px;
+    height: 20px;
+    position: absolute;
+    background-color: rgb(7, 7, 70);
+    margin-left: 35%;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.764);
+    border-color: #1B2755;
+    border-radius: 15%;
+    font-family: Arial Narrow;
+    top: 14%;
+    
+}
+
+
+::placeholder{
+    font-family:  Times New Roman;
+    height: 20px;
+    color: rgba(255, 255, 255, 0.459);
+    text-align: center;
+    visibility: 70%;
+    }
+
+    #lupa{
+        position: relative;
+        right: -20px;
+    }
 
 .account_circle{
     margin-left: 5px;
@@ -50,16 +85,6 @@ header{
     margin-top: 17px;
     margin-right: -50px;
     margin-left: -20px
-}
-
-.search{
-    height: 10px;
-    width: auto;
-    font-size: 12px;
-    background-color: rgb(7, 7, 70);
-    display: flex;
-    color: white;
-    text-align: center;
 }
 
 body{
@@ -192,4 +217,25 @@ body{
 .S1 {
     font-family: 'Inria Serif', serif;
     font-weight: 100;
+}
+
+.subtitle_report3 {
+    color: var(--SUB);
+
+}
+
+.main_text{
+    width: 600px;
+    font-size: 18px;
+    justify-self: center;
+}
+
+.image{
+    height: 500px;
+    width: 600px;
+}
+
+.imagens{
+    height: 400px;
+    width: 600px;
 }
