@@ -13,13 +13,35 @@ header{
     height: 70px;
     width: auto;
 }
+.search{
+    
+    width: 150px;
+    height: 20px;
+    position: absolute;
+    background-color: rgb(7, 7, 70);
+    margin-left: 35%;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.764);
+    border-color: #1B2755;
+    border-radius: 15%;
+    font-family: Arial Narrow;
+    
+}
 
+
+::placeholder{
+    font-family:  Times New Roman;
+    height: 20px;
+    color: rgba(255, 255, 255, 0.459);
+    text-align: center;
+    visibility: 70%;
+    }
 .Assineja{
     margin-left: 78%;
     margin-top: 0.6%;
     display: flex;
     align-items: center;
-
+    gap: 5px;
 }
 
 .account_circle{
@@ -166,7 +188,7 @@ body{
 
 .title3 h2 {
     font-size: 20px;
-    font-weight: 800px;
+    font-weight: 700px;
 
 }
 
