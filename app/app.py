@@ -7,7 +7,7 @@ mysql = MySQL(app)
 
 @app.route('/')
 def home():
-    return render_template('homescreen.html')
+    return render_template('index.html')
 
 @app.route('/report1')
 def report1_page():
