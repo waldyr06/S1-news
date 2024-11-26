@@ -4,7 +4,7 @@ body{
 
 .botoes-noticias{
     margin-left: 3%;
-    margin-top: 3%;
+    margin-top: 2%;
     flex-direction: row;
     display: flex;
 }
@@ -12,18 +12,22 @@ body{
     margin-left: 1%;
 }
 #login input[type="button"]{
-    margin-left: 45px;
+    margin-left: 10%;
     border-radius: 0; 
     padding: 10px 70px;
     background-color: rgb(217, 217, 217);
 }    
 #cadastro input[type="button"]{
-    margin-left:45px;
+    margin-left:20%;
     border-radius: 0;
     padding: 10px 70px;
     background-color: rgb(217, 217, 217);
 }
-
+#novos-botoes input[type="button"]{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
 /*Todos os botões */
 input[type="button"] {
     padding: 12px 50px;
