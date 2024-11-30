@@ -193,29 +193,3 @@ body{
     font-family: 'Inria Serif', serif;
     font-weight: 100;
 }
-
-.title_report3{
-    font-family: var(--FONTE_TITLE);
-}
-
-.subtitle_report3 {
-    color: var(--SUB);
-    font-family: var(--FONTE_SUBTITLE);
-
-}
-
-.main_text{
-    width: 600px;
-    font-size: 18px;
-    justify-self: center;
-}
-
-.image{
-    height: 300px;
-    width: 600px;
-}
-
-.image2{
-    height: 300px;
-    width: 600px;
-}
