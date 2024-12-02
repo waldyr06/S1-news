@@ -70,125 +70,6 @@ body{
     background-repeat: no-repeat;
 }
 
-.grid-item1 {
-    display: inline-block;
-    position: relative;
-}
-
-.grid-item1 img {
-    filter: brightness(50%);
-}
-.title1{
-    color: white;
-    position: absolute;
-    text-align: left;
-    top: 55%;
-    left: 10%;
-    font-size: 20px;
-    right:2%
-}
-
-.title1 h2{
-    color: white; 
-    position: absolute;
-    text-align: left;
-    top:85%;
-    left: 0%;
-    font-size: 20px;
-    font-weight: 100;
-}
-
-
-.grid-item2{
-    display: inline-block;
-    position: relative;
-}
-
-.title2{
-    color: white;
-    position: absolute;
-    text-align: right;
-    top: 30%;
-    left: 10%;
-    margin: 10px;
-}
-
-.title2 h1 {
-    font-size: 30px;
-}
-
-.title2 h2 {
-    font-size: 20px;
-    font-weight: 100;
-
-}
-
-.image-report2{
-    filter: brightness(50%);
-    object-fit: cover;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(2, 1, 1fr);
-    gap: 120px;
-    width: 600px;
-    height: 400px;
-    margin-left: 90px;
-    margin-top:40px;
-    margin-bottom: 40px;
-    row-gap: 45px;
-    overflow: hidden;   /* Esconde qualquer parte da imagem que ultrapasse o quadrado */
-}
-.sla {
-object-fit: cover;  /* A imagem vai cobrir o quadrado, cortando o excesso, se necessário */
-}
-
-.grid-item1 {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-}
-
-.grid-item2 {
-    grid-column: 2 / 3;
-    grid-row: 1;
-}
-
-.grid-item3 {
-    grid-column: 2 / 3;
-    grid-row: 2;
-}
-
-.grid-item3 {
-    display: inline-block;
-    position: relative;
-}
-
-.title3{
-    color: white;
-    position: absolute;
-    text-align: right;
-    top: 30%;
-    left: 10%;
-    margin: 20px;
-
-}
-
-.title3 h1 {
-    font-size: 27px;
-}
-
-.title3 h2 {
-    font-size: 17px;
-    font-weight: 500;
-
-}
-
-.grid-item3 img{
-    filter: brightness(80%);
-}
-
 .titulodapagina{
     margin-left: 34%;
     font-size: 40px;    
@@ -198,3 +79,81 @@ object-fit: cover;  /* A imagem vai cobrir o quadrado, cortando o excesso, se ne
     font-family: 'Inria Serif', serif;
     font-weight: 100;
 }
+
+.conteiner1 {
+    display: grid; /* Ativa o Grid Layout */
+    grid-template-columns: 1fr 1fr 1fr; /* Três colunas iguais */
+    gap: 20px; /* Espaçamento entre as colunas */
+}
+  
+  .imagem1 {
+    width: 100%; /* A imagem ocupa toda a largura da coluna */
+    height: auto; /* Mantém a proporção original da imagem */
+    grid-column: 1 / 2; /* Garante que a imagem fique na primeira coluna */
+    filter: brightness(50%);
+  }
+
+  .coluna1 {
+    /* Coluna 1, onde ficará o título e o texto */
+    padding: 10px;
+  }
+
+  .titulo1 {
+    grid-column: 1 / 2;
+    top: 100%;
+  }
+  
+  .texto1 {
+    grid-column: 1 / 1; /* Garante que o texto fique na segunda coluna */
+    font-size: 16px; /* Tamanho da fonte do texto */
+    line-height: 1.5; /* Espaçamento entre linhas */
+  }
+
+  .coluna2 {
+    /* Coluna 2, onde ficará o título e o texto */
+    padding: 10px;
+  }
+
+  .image2 {
+    width: 100%; /* A imagem ocupa toda a largura da coluna */
+    height: auto; /* Mantém a proporção original da imagem */
+    grid-column: 2 / 2; /* Garante que a imagem fique na primeira coluna */
+    filter: brightness(50%);
+  }
+
+  .titulo2 {
+    grid-column: 2 / 2;
+    top: 100%;
+  }
+
+  .texto2 {
+    grid-column: 1 / 1; /* Garante que o texto fique na segunda coluna */
+    font-size: 16px; /* Tamanho da fonte do texto */
+    line-height: 1.5; /* Espaçamento entre linhas */
+  }
+
+  .coluna3{
+    padding: 10px;
+  }
+
+  .image3{
+    width: 100%;
+    height: auto;
+    grid-column: 3 / 3;
+    filter: brightness(50%);
+  }
+
+  .titulo3{
+    grid-column: 3 / 3;
+    top: 100%;
+  }
+
+  .texto3{
+    grid-column: 3 / 3;
+    font-size: 16px;
+    line-height: 1,5;
+  }
+
+  .tira_hiperlink{
+    text-decoration: none;
+  }
