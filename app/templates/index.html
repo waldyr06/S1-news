@@ -13,20 +13,12 @@
                 <input type="button" value="Política">
             </div>
 
-            <div id = "culinaria">
-                <input type="button" value="Culinária"> 
-            </div>
-
             <div id = "esportes">
                 <input type="button" value="Esportes"> 
             </div>
 
-            <div id = "tempo">
-                <input type="button" value="Tempo"> 
-            </div>
-
-            <div id = "atual">
-                <input type="button" value="Atual"> 
+            <div id = "saude">
+                <input type="button" value="Saúde"> 
             </div>
 
             <div id = "outros">
@@ -74,13 +66,21 @@
     </footer>
     <script>
         let botoesvisiveis = false;
+        let animando = false;
 
         document.getElementById("botaomais").onclick = function(){
+            if (animando) return;
+
+            animando = true;
             const div = document.getElementById("novos-botoes");
             if (botoesvisiveis){
-            while (div.firstChild){
-                div.removeChild(div.firstChild);
-            }    
+                div.classList.remove("visible");
+                setTimeout(() => {
+                    while (div.firstChild){
+                        div.removeChild(div.firstChild);
+                    }
+                    animando = false;    
+                }, 300);
             }
             else{
                 for(let i = 1; i <= 3; i++){
@@ -94,10 +94,14 @@
                             novobotao.value = "Economia";
                         }       
                         else if(i===3){
-                            novobotao.value = "Saude";
+                            novobotao.value = "Saúde";
                         }      
                             div.appendChild(novobotao);
                 }
+                setTimeout(() => {
+                    div.classList.add("visible"); 
+                    animando = false;
+                }, 10);
                 
             }    
         botoesvisiveis = !botoesvisiveis;       

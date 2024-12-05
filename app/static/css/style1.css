@@ -1,14 +1,30 @@
 body{
     background-color: rgb(255, 255, 255);
+    background: linear-gradient(45deg, #dddddd, #dfd3c7, #9d97ce, #8599bb, #7eb5ce);
+    background-size: 300% 300%; /* Amplia o tamanho para suavizar o movimento */
+    animation: girarDegrade 10s linear infinite; /* Animação contínua */
+    overflow: hidden;
+}
+
+@keyframes girarDegrade {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .botoes-noticias{
-    margin-left: 3%;
+    margin-left: 10%;
     margin-top: 2%;
     flex-direction: row;
     display: flex;
 }
-#politica, #culinaria, #esportes, #tempo, #atual, #outros {
+#politica, #esportes, #saude, #outros {
     margin-left: 1%;
 }
 #login input[type="button"]{
@@ -18,16 +34,34 @@ body{
     background-color: rgb(217, 217, 217);
 }    
 #cadastro input[type="button"]{
-    margin-left:20%;
+    margin-left:24%;
     border-radius: 0;
     padding: 10px 70px;
     background-color: rgb(217, 217, 217);
 }
-#novos-botoes input[type="button"]{
-    margin-top: 10%;
+#novos-botoes{
+    margin: 0;
+    margin-top: 4%;
+    margin-left: 37%;
     display: flex;
     flex-direction: column;
+    z-index: 100;
+    position: absolute;
+    opacity: 0;
+    transform: translatey(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
+#novos-botoes.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+#botao1, #botao2, #botao3{
+    margin-top: 3%;
+}
+.bloqueado {
+    pointer-events: none; 
+}
+
 /*Todos os botões */
 input[type="button"] {
     padding: 12px 50px;
