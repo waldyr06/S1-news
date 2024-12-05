@@ -1,96 +1,159 @@
-:root{
-    --princ: #4a1079;
-    --violeta-claro: #370e58;
-    --violeta-escuro: #210736;
-    --azul-claro: #23396D;
-    --azul-escuro: #0C2568;
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
 }
 
-body{
-    background-image: url(radarreg.png);
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
-#esqueceusenha{
-    margin-top: .3rem;
-    text-align: right;
-    font-size: 1.2rem;
-}
-
-#login{
-    background-color: var(--princ);
-    color: white;
-}
-#login:hover{
-    background-color: var(--violeta-claro);
-}
-
-#connect{
-    text-align: center;
-    font-size: 1.8rem;
-}
-
-#connect:after, #connect:before{
-    margin: 1.2rem .8rem;
-    content: ' ';
-    display: inline-block;
-    vertical-align: middle;
-    height: 1px;
-    width: 55px;
-    background-color: black;
-}
-
-#cadastro{
-    margin-block: .5rem;
-    text-align: center;
-    font-size: 1.6rem;
-    font-family: Roboto;
-
-}
-a{
-    color: blue;
-}
-
-#Google{
-    background-color: var(--azul-claro);
-    border: 2px solid var(--princ);
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4; /* Cor de fundo clara */
     display: flex;
-    align-items: center;
     justify-content: center;
-    color: white;
-
-}
-#Google:hover{
-    background-color: rgb(236, 236, 236);
-}
-#Google img{
-    width: 32px;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
+main {
+    background-color: #cac3c398; /* Fundo semi-transparente para o formulário */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 3rem;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+}
 
-@media screen and (min-width: 768px){
-    body{
-        background-image: url(radarreg.png);
+#logos h1 {
+    font-size: 2.4rem;
+    color: #000000; /* Cor do texto */
+    margin-bottom: 1rem;
+}
+
+#logos h1:nth-child(2) {
+    font-size: 1.6rem;
+    color: #000000;
+}
+
+form {
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.form-area {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-area label {
+    font-size: 1.6rem;
+    color: #333;
+    text-align: left;
+}
+
+.form-area input {
+    font-size: 1.4rem;
+    padding: 0.8rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Fundo de entrada suave */
+    color: #333;
+    width: 100%;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-area input:focus {
+    border-color: #767879; /* Cor de borda mais intensa ao focar */
+    background-color: #c8dae600; /* Foco com cor de fundo suave */
+}
+
+.form-area .dadoInvalido {
+    font-size: 1.2rem;
+    color: red;
+    display: none; /* Esconde por padrão */
+}
+
+button {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    color: #000000;
+    background-color: #a0a0a0; /* Cor de fundo cinza */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3f4244; /* Cor mais escura ao passar o mouse */
+    color: #f9f9f9;
+}
+
+#esqueceusenha {
+    font-size: 1.2rem;
+    color: #000000; /* Cor azul clara para o link */
+    text-decoration: none;
+    margin-top: 0.5rem;
+}
+
+#esqueceusenha:hover {
+    text-decoration: underline;
+}
+
+#connect, #cadastro {
+    font-size: 1.4rem;
+    color: #666;
+}
+
+#cadastro a {
+    color: #000000; /* Cor azul clara para o link de cadastro */
+    text-decoration: none;
+}
+
+#cadastro a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 2rem;
     }
-}
 
-@media screen and (min-width: 1400px ){
-    #bg-image{
-        background-image: url(radarreg.png);
-    }
-    
-    #connect{
-        margin-block: 1rem;
+    #logos h1 {
+        font-size: 2rem;
     }
 
-    #cadastro{
-        margin-top: 3rem;
+    #logos h1:nth-child(2) {
+        font-size: 1.4rem;
     }
-}
 
-@media screen and (min-width: 1700px){
-    #bg-image{
-        background-image: url(radarreg.png);
-        width: 300px;
-        height: 100vh;
+    .form-area label {
+        font-size: 1.4rem;
+    }
+
+    .form-area input {
+        font-size: 1.2rem;
+        padding: 0.6rem;
+    }
+
+    button {
+        padding: 1rem 1.5rem;
+        font-size: 1.4rem;
     }
 }

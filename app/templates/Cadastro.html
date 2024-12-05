@@ -6,34 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S1 News</title>
     <link rel="stylesheet" href="/static/css/cadastro.css">
-    <link rel=stylesheet type=text/css href="{{ url_for ('static', filename='/css/cadastro.css') }}">
-    <link rel="stylesheet" href="/static/css/normal.css">
+    <link rel="stylesheet" href="/static/css/style1.css">
 </head>
 
 <body>
-    <div id="bg-image">
+    <!-- Removendo a imagem de fundo anterior -->
+    <div id="bg-image" style="display: none;">
     </div>
 
     <main>
         <div id="logos">
-
-           <h1>S1 News</h1>
-           <h1>O melhor site de notícias</h1>
-
+            <h1>S1 News</h1>
+            <h1>O melhor site de notícias</h1>
         </div>
         
         <form action="Cadastro.html" method="POST">
             <fieldset>
                 <div class="form-area">
-                    <label for="email">Email</label>
-                    <input type="email" class="inputData" name="email" id="emailCadastro" autofocus onblur="emailValidate()" required>
-                    <p class="dadoInvalido">Digite um endereço de email válido!</p>
-                </div>
-
-                <div class="form-area">
                     <label for="name">Nome Completo</label>
                     <input type="text" class="inputData" name="name" id="nomeCadastro" onblur="nameValidate()" required>
                     <p class="dadoInvalido">Digite seu nome completo!</p>
+                </div>
+
+                <div class="form-area">
+                    <label for="email">Email</label>
+                    <input type="email" class="inputData" name="email" id="emailCadastro" autofocus onblur="emailValidate()" required>
+                    <p class="dadoInvalido">Digite um endereço de email válido!</p>
                 </div>
 
                 <div class="form-area">
@@ -45,12 +43,10 @@
                 <button id="cadastrar">Cadastrar-se</button>
 
                 <span id="temConta">Já possui uma conta? <a href="login.html">Entrar</a></span>
-
             </fieldset>
         </form>
-                
-
     </main>
 </body>
+
 <script src="/S1-news/app/scripts/cadastro.js"></script>
 </html>
