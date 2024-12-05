@@ -3,18 +3,18 @@ from flask import render_template
 def init_app(app):
     @app.route('/')
     def home():
-        return render_template('esportes.html')
+        return render_template('politics.html')
 
     @app.route('/report1')
-    def report1_page():
+    def preport1_page():
         return render_template('preport1.html')
 
     @app.route('/report2')
-    def report2_page():
+    def preport2_page():
         return render_template('preport2.html')
 
     @app.route('/report3')
-    def report3_page():
+    def preport3_page():
         return render_template('preport3.html')
     
     @app.route('/esporte4')

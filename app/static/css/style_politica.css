@@ -8,6 +8,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 
+
 :root{
     --TITLE: #1f2123;
     --SUB: #4f5257;
@@ -16,7 +17,11 @@
     --FONTE_SUBTITLE: "Roboto", sans-serif;
     --FONTE_PADRAO:"Inter", sans-serif;
 
+}   
+body {
+margin: 0%;
 }
+    
     header{
         margin: 0%;
         background-image: radial-gradient(#FFFFFF, #CCCCCC);
@@ -63,6 +68,7 @@
     }
 
 body{
+    padding:0%;
     margin: 0%;
     background-image: radial-gradient(#FFFFFF, #C5C5C5);
     background-size: cover;
@@ -134,7 +140,7 @@ body{
     gap: 120px;
     width: 600px;
     height: 400px;
-    margin-left: 90px;
+    margin-left: 10px;
     margin-top:40px;
     margin-bottom: 40px;
     row-gap: 45px;
