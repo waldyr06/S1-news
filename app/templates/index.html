@@ -25,6 +25,9 @@
                 <input type="button" value="..." id="botaomais"> 
                 
             </div>
+            <div id = "novos-botoes">
+               
+            </div>
             
             <div id = "login">
                 <input type="button" value = "Login">
@@ -38,11 +41,8 @@
 
         
     </header>
-    <div id = "novos-botoes">
-               
-    </div>    
-    <main>
         
+    <main>
         <div id = "fraseh1">
             <h1>S1 News:</h1>
         </div>
@@ -66,13 +66,21 @@
     </footer>
     <script>
         let botoesvisiveis = false;
+        let animando = false;
 
         document.getElementById("botaomais").onclick = function(){
+            if (animando) return;
+
+            animando = true;
             const div = document.getElementById("novos-botoes");
             if (botoesvisiveis){
-            while (div.firstChild){
-                div.removeChild(div.firstChild);
-            }    
+                div.classList.remove("visible");
+                setTimeout(() => {
+                    while (div.firstChild){
+                        div.removeChild(div.firstChild);
+                    }
+                    animando = false;    
+                }, 300);
             }
             else{
                 for(let i = 1; i <= 3; i++){
@@ -90,6 +98,10 @@
                         }      
                             div.appendChild(novobotao);
                 }
+                setTimeout(() => {
+                    div.classList.add("visible"); 
+                    animando = false;
+                }, 10);
                 
             }    
         botoesvisiveis = !botoesvisiveis;       
