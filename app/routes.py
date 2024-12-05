@@ -2,8 +2,8 @@ from flask import render_template
 
 def init_app(app):
     @app.route('/')
-    def home():
-        return render_template('esportes.html')
+    def index():
+        return render_template('index.html')
 
     @app.route('/report1')
     def report1_page():
