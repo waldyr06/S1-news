@@ -1,0 +1,181 @@
+@font-face {
+    font-family: "Inter", sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
+}
+body{
+    margin: 0%;
+    background-image: radial-gradient(#FFFFFF, #C5C5C5);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+header{
+    margin: 0%;
+    background-image: radial-gradient(#FFFFFF, #CCCCCC);
+    height: 70px;
+    width: auto;
+}
+
+.Assineja{
+    margin-left: 78%;
+    margin-top: 0.6%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.account_circle{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top:5px 
+}   
+
+.purpleheader{
+    background-color: #1B2755;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.bars{
+    margin-top: 1%;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.menu{
+    margin-top: 0.9%;
+    font-family: "Inter", sans-serif;
+}
+
+.whiteline{
+    margin-top: 17px;
+    margin-right: -50px;
+    margin-left: -20px
+}
+.titulodapagina{
+    font-size: 40px;    
+}
+.redirect{
+    width: auto;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 125px;
+}
+
+.politicsredirect{
+    background-image: url(https://c.files.bbci.co.uk/DBCE/production/_102107265_667060400.jpg);
+    background-size: 70%;
+    filter: brightness(65%);
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    visibility: 70%;
+    width: 260px;
+    height: 42px;
+    padding: 12px, 50px;
+    border-radius: 20px;
+    border-color: azure;
+}
+
+.healthyredirect{
+    background-image: url(https://www.posestacio.com.br/wp-content/uploads/2023/05/programa-de-saude-da-familia-1024x622.webp);
+    background-size: 100%;
+    filter: brightness(65%);
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    visibility: 70%;
+    width: 260px;
+    height: 42px;
+    padding: 12px, 50px;
+    border-radius: 20px;
+    border-color: azure;
+}
+
+.sportsredirect{
+    background-image: url(https://www.meupositivo.com.br/doseujeito/wp-content/uploads/2023/01/Futebol-conheca-a-historia-e-as-regras.jpg);
+    background-size: 100%;
+    filter: brightness(55%);
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    visibility: 100%;
+    width: 260px;
+    height: 42px;
+    padding: 12px, 50px;
+    border-radius: 20px;
+    border-color: azure;
+}
+.corbut{
+    color: rgb(0, 255, 221);
+}
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1, 1fr);
+    gap: 120px;
+    width: 600px;
+    height: 400px;
+    margin-left: 90px;
+    margin-top:40px;
+    margin-bottom: 40px;
+    row-gap: 45px;
+    position: relative;
+    right: -22%
+}
+.grid-item1{
+    display: inline-block;
+    position: relative;
+    grid-column: 1;
+    left: -7%;
+    border: black, 10px;
+    border-radius: 50%;
+}
+.title1{
+    color: white;
+    position: absolute;
+    text-align: right;
+    top: 80px;
+    left: 20%;
+    margin: 10px;
+}
+.title1 h1 {
+    font-size: 30px;
+}
+.title1 h2 {
+    font-size: 20px;
+    font-weight: 700px;
+}
+h2{
+    background: radial-gradient(circle, #FFFFFF, #C5C5C5);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.image-report1{
+    filter: brightness(30%);
+}
+.grid-item2{
+    display: inline-block;
+    position: relative;
+    bottom: -10%;
+    right: -7%;
+    grid-column: 2;
+}
+.title2{
+    color: white;
+    position: absolute;
+    text-align: right;
+    top: 30%;
+    left: 20%;
+    margin: 10px;
+}
+.title2 h1 {
+    font-size: 30px;
+}
+.title2 h2 {
+    font-size: 20px;
+    font-weight: 700px;
+}
+.image-report2{
+    filter: brightness(30%);
+}
