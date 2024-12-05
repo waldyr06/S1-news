@@ -64,4 +64,3 @@ def init_app(app):
     @app.route('/saude/reportsa3')
     def reportsa3_page():
         return render_template('reportsaude3.html')
-   
