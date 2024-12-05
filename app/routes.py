@@ -2,8 +2,8 @@ from flask import render_template
 
 def init_app(app):
     @app.route('/')
-    def home():
-        return render_template('politics.html')
+    def index():
+        return render_template('index.html')
 
     @app.route('/report1')
     def preport1_page():
@@ -28,3 +28,11 @@ def init_app(app):
     @app.route('/esporte6')
     def esporte_report6_page():
         return render_template('ereport6.html')
+
+    @app.route('/Cadastro.html')
+    def Cadastro_page():
+        return render_template('Cadastro.html')
+
+    @app.route('/login.html')
+    def login_page():
+        return render_template('login.html')

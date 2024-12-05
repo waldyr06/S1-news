@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S1 News - A sua fonte de informação</title>
+    <link rel="stylesheet" href="/static/css/style1.css">
+</head>
+<body>
+    {% block content %}
+
+    {% endblock %}
+</body>
+<footer>
+    <p>Empresa Abobora Dev. - Grupo Dev - Copyright Abobodev (2024 - 2024)
+        <br>CNPJ: 60.579.703/0001-48</p>
+</footer>
+<script>
+    let botoesvisiveis = false;
+    let animando = false;
+
+    document.getElementById("botaomais").onclick = function(){
+        if (animando) return;
+
+        animando = true;
+        const div = document.getElementById("novos-botoes");
+        if (botoesvisiveis){
+            div.classList.remove("visible");
+            setTimeout(() => {
+                while (div.firstChild){
+                    div.removeChild(div.firstChild);
+                }
+                animando = false;    
+            }, 300);
+        }
+        else{
+            for(let i = 1; i <= 3; i++){
+                let novobotao = document.createElement("input");
+                novobotao.type = "button";
+                novobotao.id = "botao" + i;
+                    if(i===1){
+                        novobotao.value = "Geopolitica";
+                    }   
+                    else if(i===2){
+                        novobotao.value = "Economia";
+                    }       
+                    else if(i===3){
+                        novobotao.value = "Saúde";
+                    }      
+                        div.appendChild(novobotao);
+            }
+            setTimeout(() => {
+                div.classList.add("visible"); 
+                animando = false;
+            }, 10);
+            
+        }    
+    botoesvisiveis = !botoesvisiveis;       
+};    
+</script>
+
+
+</html>

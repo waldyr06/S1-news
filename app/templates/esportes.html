@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Esporte</title>
     <link rel="stylesheet" href="/static/css/style_esportes.css">
     <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap" rel="stylesheet">
 </head>
@@ -12,8 +12,9 @@
 <header>
     <br>
     <div class="Assineja">
-        <p>
-            <label>Assine já 
+        <p> 
+            <a href="{{ url_for('Cadastro_page')}}" class="tira_hiperlink">
+            <label> Assine já </a>
                 <div class="account_circle">
                     <img src="/static/images/account_circle.png">
                 </div> Conta S1 News</label>
@@ -67,6 +68,8 @@
         seu retorno à Série A do Brasileirão. Com resultados expressivos, e sufoco no final da competição.</h2>
         </a>
     </div>
+
+    
 </div>
 </body>
 </html>
