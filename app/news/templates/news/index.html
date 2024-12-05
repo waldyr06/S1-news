@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
-<body>
-    <header>  
+
+<!--<div><header>  
         <div class = "botoes-noticias">
             <div id = "politica">
                 <input type="button" value="Política">
@@ -53,7 +53,9 @@
             <input type="button" value="Acesse já!">
         </div>
     </main>
+</div>-->
 
-    
-</body>
+<div>
+    <a href="{{ url_for('news.politics')}}" >Contato</a> 
+</div>
 {% endblock %}

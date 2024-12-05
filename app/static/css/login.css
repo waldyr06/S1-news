@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url(radarreg.png);
+    background-image: url('../images/desktopbg.png');
 }
 
 #esqueceusenha{
@@ -69,13 +69,13 @@ a{
 
 @media screen and (min-width: 768px){
     body{
-        background-image: url(radarreg.png);
+        background-image: url('../images/desktopbg.png');
     }
 }
 
 @media screen and (min-width: 1400px ){
     #bg-image{
-        background-image: url(radarreg.png);
+        background-image: url('../images/desktopbg.png');
     }
     
     #connect{
@@ -89,7 +89,7 @@ a{
 
 @media screen and (min-width: 1700px){
     #bg-image{
-        background-image: url(radarreg.png);
+        background-image: url(/app/static/images/desktopbg.png);
         width: 300px;
         height: 100vh;
     }

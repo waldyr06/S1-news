@@ -3,7 +3,7 @@ from flask import render_template
 def init_app(app):
     @app.route('/')
     def index():
-        return render_template('index.html')
+        return render_template('/news/index.html')
 
     @app.route('/report1')
     def preport1_page():
@@ -29,10 +29,10 @@ def init_app(app):
     def esporte_report6_page():
         return render_template('ereport6.html')
 
-    @app.route('/Cadastro.html')
-    def Cadastro_page():
-        return render_template('Cadastro.html')
+    @app.route('/cadastro')
+    def cadastro():
+        return render_template('cadastro.html')
 
-    @app.route('/login.html')
+    @app.route('/login')
     def login_page():
         return render_template('login.html')
