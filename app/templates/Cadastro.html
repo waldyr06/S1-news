@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S1 News</title>
-    <link rel="stylesheet" href="/static/css/index.css">
     <link rel="stylesheet" href="/static/css/cadastro.css">
+    <link rel=stylesheet type=text/css href="{{ url_for ('static', filename='/css/cadastro.css') }}">
+    <link rel="stylesheet" href="/static/css/normal.css">
 </head>
 
 <body>
@@ -21,7 +22,7 @@
 
         </div>
         
-        <form action="{{ url_for('cadastro') }}" method="POST">
+        <form action="Cadastro.html" method="POST">
             <fieldset>
                 <div class="form-area">
                     <label for="email">Email</label>
@@ -51,5 +52,5 @@
 
     </main>
 </body>
-<script src="/scripts/cadastro.js"></script>
+<script src="/S1-news/app/scripts/cadastro.js"></script>
 </html>
