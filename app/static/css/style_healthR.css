@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "Inter", sans-serif;
+    src: url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root{
+    --TITLE: #1f2123;
+    --SUB: #4f5257;
+    
+
+    --FONTE_PADRAO:"Inter", sans-serif;
+}
+header{
+    margin: 0%;
+    background-image: radial-gradient(#FFFFFF, #CCCCCC);
+    height: 70px;
+    width: auto;
+}
+
+.Assineja{
+    margin-left: 78%;
+    margin-top: 0.6%;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.account_circle{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top:5px 
+}   
+
+.purpleheader{
+    background-color: #1B2755;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.bars{
+    margin-top: 1%;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.menu{
+    margin-top: 0.9%;
+    font-family: "Inter", sans-serif;
+}
+
+.whiteline{
+    margin-top: 17px;
+    margin-right: -50px;
+    margin-left: -20px
+}
+
+body{
+    margin: 0%;
+    background-image: radial-gradient(#FFFFFF, #C5C5C5);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.page_title{
+    margin-left: 34%;
+    font-size: 40px;    
+}
+
+.S1 {
+    font-family: 'Inria Serif', serif;
+    font-weight: 100;
+}
+
+.title_report{
+    padding-top: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.subtitle_report {
+    color: var(--SUB);
+    text-align: center;
+}
+
+.main_text{
+    width: 600px;
+    font-size: 18px;
+    justify-self: center;
+}
+
+.image{
+    height: 350px;
+    width: 600px;
+}
