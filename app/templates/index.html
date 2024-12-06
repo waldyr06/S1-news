@@ -8,53 +8,52 @@
 </head>
 <body>
     <header>  
-        <a href="{{ url_for('policy_page')}}"><div class = "botoes-noticias">
-            <div id = "politica">
+        <a href="{{ url_for('policy_page') }}"><div class="botoes-noticias">
+            <div id="politica">
                 <input type="button" value="Política">
             </div></a>
 
-            <a href="{{ url_for('sport_page')}}"><div id = "esportes">
+            <a href="{{ url_for('sport_page') }}"><div id="esportes">
                 <input type="button" value="Esportes"> 
             </div></a>
 
-            <a href="{{ url_for('health_page')}}"><div id = "saude">
+            <a href="{{ url_for('health_page') }}"><div id="saude">
                 <input type="button" value="Saúde"> 
             </div></a>
 
-            <div id = "outros">
+            <div id="outros">
                 <input type="button" value="..." id="botaomais"> 
-                
             </div>
-            <div id = "novos-botoes">
+            <div id="novos-botoes">
                
             </div>
             
-            <a href="{{ url_for('login_page')}}"><div id = "login">
-                <input type="button" value = "Login">
+            <a href="{{ url_for('login_page') }}"><div id="login">
+                <input type="button" value="Login">
             </div></a>
 
-            <a href="{{ url_for('Cadastro_page')}}"><div id = "cadastro">
+            <a href="{{ url_for('Cadastro_page') }}"><div id="cadastro">
                 <input type="button" value="Cadastro">
             </div></a>
 
         </div>
-  
+
     </header>
         
     <main>
-        <div id = "fraseh1">
+        <div id="fraseh1">
             <h1>S1 News:</h1>
         </div>
-        <div id = "frasep">
+        <div id="frasep">
             <p>A sua Fonte de 
             <br>informação, Sempre em 
             <br>Primeiro Lugar.</p>
         </div>
-        <div id = "frasep2">
+        <div id="frasep2">
             <p>Um site de notícias atualizado e confiável, oferecendo
             <br> informações suprindo a sua necessidade </p>
         </div>
-        <div id = "acesse_botao">
+        <div id="acesse_botao">
             <input type="button" value="Acesse já!">
         </div>
     </main>
@@ -86,25 +85,35 @@
                     let novobotao = document.createElement("input");
                     novobotao.type = "button";
                     novobotao.id = "botao" + i;
-                        if(i===1){
-                            novobotao.value = "Geopolitica";
-                        }   
-                        else if(i===2){
-                            novobotao.value = "Economia";
-                        }       
-                        else if(i===3){
-                            novobotao.value = "Saúde";
-                        }      
-                            div.appendChild(novobotao);
+                    if(i === 1){
+                        novobotao.value = "Botafogo ca...";
+                        let link = document.createElement("a");
+                        link.href = "{{ url_for('esporte_report4_page') }}"; // Substitua pelo link adequado
+                        link.appendChild(novobotao);
+                        div.appendChild(link);
+                    }
+                    else if(i === 2){
+                        novobotao.value = "Aumento de...";
+                        let link = document.createElement("a");
+                        link.href = "{{ url_for('preport1_page') }}"; // Substitua pelo link adequado
+                        link.appendChild(novobotao);
+                        div.appendChild(link);
+                    }
+                    else if(i === 3){
+                        novobotao.value = "Impactos de...";
+                        let link = document.createElement("a");
+                        link.href = "{{ url_for('reportsa1_page') }}"; // Substitua pelo link adequado
+                        link.appendChild(novobotao);
+                        div.appendChild(link);
+                    }
                 }
                 setTimeout(() => {
                     div.classList.add("visible"); 
                     animando = false;
                 }, 10);
-                
-            }    
-        botoesvisiveis = !botoesvisiveis;       
-    };    
+            }
+            botoesvisiveis = !botoesvisiveis;
+        };    
     </script>
 </body>
 </html>

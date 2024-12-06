@@ -26,18 +26,21 @@ body{
 }
 #politica, #esportes, #saude, #outros {
     margin-left: 1%;
+    padding: 5px;
 }
 #login input[type="button"]{
     margin-left: 10%;
     border-radius: 0; 
     padding: 10px 70px;
     background-color: rgb(217, 217, 217);
+    margin-top: 4%;
 }    
 #cadastro input[type="button"]{
     margin-left:24%;
     border-radius: 0;
     padding: 10px 70px;
     background-color: rgb(217, 217, 217);
+    margin-top: 3.4%;
 }
 #novos-botoes{
     margin: 0;
