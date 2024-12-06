@@ -179,3 +179,8 @@ h2{
 .image-report2{
     filter: brightness(30%);
 }
+
+.tira_hiperlink{
+    text-decoration: none;
+    color: black;
+  }

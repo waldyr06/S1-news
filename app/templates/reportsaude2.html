@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notícia - Ministério da Saúde - Queimadas e Secas</title>
-    <link rel="stylesheet" href="static/css/stylesaudereport.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesaudereport.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap" rel="stylesheet">
 </head>
 
@@ -23,13 +23,13 @@
 <div class="purpleheader">
     <p>
         <label>
-            <div class="bars">
-                    <img src="/static/images/bars.png">
-                </a>              
-            </div>
-            <div class="menu">
-                <label style="color: white; margin-top: 100px;">menu</label>
-            </div>
+            <a href="{{ url_for('menu_page') }}"><div class="bars">
+                <img src="/static/images/bars.png">
+            </a>              
+        </div>
+        <div class="menu">
+            <label style="color: white; margin-top: 100px;">menu</label>
+        </div></a>
         </label>
         <div class="whiteline">
             <img src="/static/images/white-line.png" height="40" width="90">
@@ -49,7 +49,7 @@
     <div class="subtitle_report">
         <h3>"Estamos vivenciando um quadro que exige atenção imediata...", afirmou a ministra</h3>
     </div>
-    <img class= "image" src="static/images/trindade.jpg">
+    <img class= "image" src="{{ url_for('static', filename='images/trindade.jpg') }}">
     <P>Em entrevista ao programa Bom Dia, a Ministra da Saúde, Trindade, anunciou um conjunto de medidas estratégicas voltadas para mitigar os efeitos nocivos das queimadas e secas sobre a saúde da população. Estas ações buscam minimizar os danos respiratórios e outras condições de saúde agravadas pela poluição e pela escassez hídrica, especialmente nas regiões mais afetadas.</P>
     <P>As queimadas liberam uma grande quantidade de partículas tóxicas no ar, como o material particulado fino (PM2.5), que tem sido associado a problemas respiratórios graves, como asma, bronquite e até infarto. Além disso, a seca prolongada pode comprometer a qualidade da água, favorecendo surtos de doenças infecciosas.</P>
         <P>"Estamos vivenciando um quadro que exige atenção imediata. Nossa prioridade é garantir a saúde respiratória das populações mais vulneráveis e assegurar o acesso a recursos hídricos de qualidade", afirmou a ministra.</P>
@@ -63,7 +63,7 @@
     <h1>Um dever em comum</h1>
     <P>O efeito combinado das queimadas e secas afeta não apenas a saúde pública, mas também a economia e a segurança alimentar. "O enfrentamento desse problema exige um esforço integrado entre Saúde, Meio Ambiente e outros setores," concluiu a ministra.</P>
     <P>A sociedade também é chamada a participar, seja por meio do combate às práticas ilegais de queimadas, seja cobrando políticas públicas sustentáveis.</P>
-    <img class= "image" src="static/images/queimadas.jpg">
+    <img class= "image" src="{{ url_for('static', filename='images/queimadas.jpg') }}">
 </div>
 
 </body>

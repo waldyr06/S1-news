@@ -13,23 +13,24 @@
     <br>
     <div class="Assineja">
         <p>
-            <label>Assine já 
-                <div class="account_circle">
-                    <img src="/static/images/account_circle.png">
-                </div>Conta S1 News</label>
+            <a href="{{ url_for('Cadastro_page')}}" class="tira_hiperlink">
+                <label> Assine já </a>
+                    <div class="account_circle">
+                        <img src="/static/images/account_circle.png">
+                    </div> Conta S1 News</label>
         </p>    
     </div>
 </header>
 <div class="purpleheader">
     <p>
         <label>
-            <div class="bars">
-                    <img src="/static/images/bars.png">
-                </a>              
-            </div>
-            <div class="menu">
-                <label style="color: white; margin-top: 100px;">menu</label>
-            </div>
+            <a href="{{ url_for('menu_page') }}"><div class="bars">
+                <img src="/static/images/bars.png">
+            </a>              
+        </div>
+        <div class="menu">
+            <label style="color: white; margin-top: 100px;">menu</label>
+        </div></a>
         </label>
         <div class="whiteline">
             <img src="/static/images/white-line.png" height="40" width="90">

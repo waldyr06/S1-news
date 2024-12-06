@@ -22,7 +22,7 @@ def init_app(app):
         return render_template('preport3.html')
     
     @app.route('/esportes')
-    def esportes_page():
+    def sports_page():
         return render_template('esportes.html')
     
     @app.route('/esportes/esporte4')
@@ -37,11 +37,11 @@ def init_app(app):
     def esporte_report6_page():
         return render_template('ereport6.html')
 
-    @app.route('/Cadastro.html')
+    @app.route('/cadastro')
     def Cadastro_page():
         return render_template('Cadastro.html')
 
-    @app.route('/login.html')
+    @app.route('/login')
     def login_page():
         return render_template('login.html')
 

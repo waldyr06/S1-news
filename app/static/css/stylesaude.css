@@ -106,7 +106,7 @@ h2{
     gap: 120px;
     width: 600px;
     height: 400px;
-    margin-left: 90px;
+    margin-left: 20px;
     margin-top:40px;
     margin-bottom: 40px;
     row-gap: 45px;
@@ -154,3 +154,8 @@ h2{
     font-family: 'Inria Serif', serif;
     font-weight: 100;
 }
+
+.tira_hiperlink{
+    text-decoration: none;
+    color: black;
+  }
