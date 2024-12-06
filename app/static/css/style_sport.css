@@ -15,7 +15,6 @@
     --FONTE_TITLE:"Playfair Display", serif;;
     --FONTE_SUBTITLE: "Roboto", sans-serif;
     --FONTE_PADRAO:"Inter", sans-serif;
-
 }
     header{
         margin: 0%;
@@ -29,7 +28,6 @@
         margin-top: 0.6%;
         display: flex;
         align-items: center;
-
     }
 
     .account_circle{
@@ -70,7 +68,7 @@ body{
     background-repeat: no-repeat;
 }
 
-.titulodapagina{
+.page_title{
     margin-left: 34%;
     font-size: 40px;    
 }
@@ -80,72 +78,69 @@ body{
     font-weight: 100;
 }
 
-.conteiner1 {
-    display: grid; /* Ativa o Grid Layout */
-    grid-template-columns: 1fr 1fr 1fr; /* Três colunas iguais */
-    gap: 20px; /* Espaçamento entre as colunas */
+.container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
     grid-template-areas: "coluna1 coluna2 coluna3";
-          
-
 }
   
-  .imagem1 {
-    width: 100%; /* A imagem ocupa toda a largura da coluna */
-    height: auto; /* Mantém a proporção original da imagem */
-    grid-column: 1 / 2; /* Garante que a imagem fique na primeira coluna */
+  .image1 {
+    width: 100%;
+    height: auto;
+    grid-column: 1 / 2;
     filter: brightness(50%);
-    border-radius: 15%;
   }
 
-  .coluna1 {
+  .column1 {
     /* Coluna 1, onde ficará o título e o texto */
-    padding: 4px;
     grid-area: coluna1;
     border-radius: 10%;
+    background-color:white  ;
   }
 
-  .titulo1 {
+  .title1 {
     grid-column: 1 / 2;
     top: 100%;
   }
   
-  .texto1 {
-    grid-column: 1 / 1; /* Garante que o texto fique na segunda coluna */
-    font-size: 16px; /* Tamanho da fonte do texto */
-    line-height: 1.5; /* Espaçamento entre linhas */
+  .text1 {
+    grid-column: 1 / 1; 
+    font-size: 16px;
+    line-height: 1.5;
   }
 
-  .coluna2 {
+  .column2 {
     /* Coluna 2, onde ficará o título e o texto */
-    padding: 4px;
     grid-area: coluna2;
-    border-radius: 10%;
+    border-radius: 7%;
+    background-color:white  ;
   }
 
   .image2 {
-    width: 100%; /* A imagem ocupa toda a largura da coluna */
-    height: auto; /* Mantém a proporção original da imagem */
-    grid-column: 2 / 2; /* Garante que a imagem fique na primeira coluna */
+    width: 100%;
+    height: auto;
+    grid-column: 2 / 2;
     filter: brightness(50%);
-    border-radius: 15%;
     
   }
 
-  .titulo2 {
+  .title2 {
     grid-column: 2 / 2;
     top: 100%;
   }
 
-  .texto2 {
-    grid-column: 1 / 1; /* Garante que o texto fique na segunda coluna */
-    font-size: 16px; /* Tamanho da fonte do texto */
-    line-height: 1.5; /* Espaçamento entre linhas */
+  .text2 {
+    grid-column: 1 / 1;
+    font-size: 16px;
+    line-height: 1.5;
   }
 
-  .coluna3{
-    padding: 4px;
+  .column3{
+    /* Coluna 3, onde ficará o título e o texto */
     grid-area: coluna3;
-    border-radius: 10%;
+    border-radius: 17%;
+    background-color:white  ;
   }
 
   .image3{
@@ -153,15 +148,14 @@ body{
     height: auto;
     grid-column: 3 / 3;
     filter: brightness(50%);
-    border-radius: 15%;
   }
 
-  .titulo3{
+  .title3{
     grid-column: 3 / 3;
     top: 100%;
   }
 
-  .texto3{
+  .text3{
     grid-column: 3 / 3;
     font-size: 16px;
     line-height: 1,5;

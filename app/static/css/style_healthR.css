@@ -18,14 +18,12 @@ header{
     width: auto;
 }
 
-
 .Assineja{
     margin-left: 78%;
     margin-top: 0.6%;
     display: flex;
     align-items: center;
     gap: 10px
-
 }
 
 .account_circle{
@@ -74,11 +72,9 @@ h1 {
 h2 {
     font-size: 20px;
     font-weight: 100;
-
 }
 
-
-.titulodapagina{
+.page_title{
     margin-left: 34%;
     font-size: 40px;    
 }
@@ -93,10 +89,10 @@ h2 {
     font-size: 40px;
     text-align: center;
 }
+
 .subtitle_report {
     color: var(--SUB);
     text-align: center;
-
 }
 
 .main_text{
@@ -109,4 +105,3 @@ h2 {
     height: 350px;
     width: 600px;
 }
-
