@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="/static/css/style_menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <br>
+        <div class="Assineja">
+            <p>
+                <a href="{{ url_for('auth.register')}}" class="tira_hiperlink">
+                    <label> Assine já </a>
+                        <div class="account_circle">
+                            <img src="/static/images/account_circle.png">
+                        </div> Conta S1 News
+                    </label>
+            </p>    
+        </div>
+    </header>
+    <div class="purpleheader">
+        <p>
+            <label>
+                <a href="{{ url_for('content.menu_page') }}"><div class="bars">
+                    <img src="/static/images/bars.png">
+                </a>                  
+            </div>
+            <div class="menu">
+                <label style="color: white; margin-top: 100px;">menu</label>
+            </div></a>
+            </label>
+            <div class="whiteline">
+                <img src="/static/images/white-line.png" height="40" width="90">
+            </div>
+            <h1 class="titulodapagina" style="color: white; margin-left: 40%; margin-top: 2.4%;">S1</h1>
+        </p>
+    </div>
+
+    <main>
+        <section class="redirect">
+            <a href="{{ url_for('content.policy_page') }}"><button class="politicsredirect"><div class="corbut">Política</div></button></a>
+            <a href="{{ url_for('content.health_page') }}"><button class="healthyredirect"><div class="corbut">Saúde</div></button></a>
+            <a href="{{ url_for('content.sport_page') }}"><button class="sportsredirect"><div class="corbut">Esportes</div></button></a>
+        </section>
+        <section class="content">
+            <a href="{{ url_for('content.reportsa2_page') }}"><div class="grid-item1">
+            <div class="image-report1" class="image-report2">
+            <img src="/static/images/trinity.jpg" height="320" width="700" ;>
+            </div>
+            <div class="title1">
+                <h1>Saúde vai intensificar ações para mitigar efeito de queimadas e seca.</h1>
+                <h2>Nisia Trindade deu entrevista ao programa Bom dia, ministra.</h2>
+            </div>
+            </a>
+        </section>
+    </main>
+</body>

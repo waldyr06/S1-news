@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S1 News</title>
+    <link rel="stylesheet" href="/static/css/style_register.css">
+    <link rel="stylesheet" href="/static/css/style_index.css">
+</head>
+
+<body>
+    <div id="bg-image" style="display: none;">
+    </div>
+
+    <main>
+        <div id="logos">
+            <h1>S1 News</h1>
+            <h1>O melhor site de notícias</h1>
+        </div>
+        
+        <form action="{{ url_for('auth.register') }}" method="POST">
+            <fieldset>
+                <div class="form-area">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" class="inputData" name="name" id="nomeCadastro" required>
+                </div>
+        
+                <div class="form-area">
+                    <label for="email">Email</label>
+                    <input type="email" class="inputData" name="email" id="emailCadastro" required>
+                </div>
+        
+                <div class="form-area">
+                    <label for="password">Senha</label>
+                    <input type="password" class="inputData" name="senha" id="passwordCadastro" required>
+                </div>
+        
+                <button id="cadastrar" type="submit">Cadastrar-se</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+<script src="/S1-news/app/scripts/cadastro.js"></script>
+</html>
