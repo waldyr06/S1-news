@@ -2,6 +2,7 @@
     font-family: "Inter", sans-serif;
     src: url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap);
 }
+
 body{
     margin: 0%;
     background-image: radial-gradient(#FFFFFF, #C5C5C5);
@@ -9,6 +10,7 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
+
 header{
     margin: 0%;
     background-image: radial-gradient(#FFFFFF, #CCCCCC);
@@ -53,9 +55,11 @@ header{
     margin-right: -50px;
     margin-left: -20px
 }
+
 .titulodapagina{
     font-size: 40px;    
 }
+
 .redirect{
     width: auto;
     height: 150px;
@@ -72,8 +76,8 @@ header{
     font-family: "Inter", sans-serif;
     font-size: 20px;
     visibility: 70%;
-    width: 260px;
-    height: 42px;
+    width: 300px;
+    height: 64px;
     padding: 12px, 50px;
     border-radius: 20px;
     border-color: azure;
@@ -86,8 +90,8 @@ header{
     font-family: "Inter", sans-serif;
     font-size: 20px;
     visibility: 70%;
-    width: 260px;
-    height: 42px;
+    width: 300px;
+    height: 64px;
     padding: 12px, 50px;
     border-radius: 20px;
     border-color: azure;
@@ -100,15 +104,17 @@ header{
     font-family: "Inter", sans-serif;
     font-size: 20px;
     visibility: 100%;
-    width: 260px;
-    height: 42px;
+    width: 300px;
+    height: 64px;
     padding: 12px, 50px;
     border-radius: 20px;
     border-color: azure;
 }
+
 .corbut{
     color: rgb(255, 255, 255);
 }
+
 .content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -123,6 +129,7 @@ header{
     position: relative;
     right: -22%
 }
+
 .grid-item1{
     display: inline-block;
     position: relative;
@@ -131,6 +138,7 @@ header{
     border: black, 10px;
     border-radius: 50%;
 }
+
 .title1{
     color: white;
     position: absolute;
@@ -139,24 +147,30 @@ header{
     left: 20%;
     margin: 10px;
 }
+
 .title1 h1 {
     font-size: 30px;
 }
+
 .title1 h2 {
     font-size: 20px;
     font-weight: 700px;
 }
+
 h2{
     background: radial-gradient(circle, #FFFFFF, #C5C5C5);
     -webkit-background-clip: text;
     color: transparent;
 }
+
 .image-report1{
     filter: brightness(30%);
 }
+
 .image-report1 img{
-    border-radius: 50%;
+    border-radius: 4.5%;
 }
+
 .grid-item2{
     display: inline-block;
     position: relative;
@@ -164,6 +178,7 @@ h2{
     right: -7%;
     grid-column: 2;
 }
+
 .title2{
     color: white;
     position: absolute;
@@ -172,13 +187,16 @@ h2{
     left: 20%;
     margin: 10px;
 }
+
 .title2 h1 {
     font-size: 30px;
 }
+
 .title2 h2 {
     font-size: 20px;
     font-weight: 700px;
 }
+
 .image-report2{
     filter: brightness(30%);
 }

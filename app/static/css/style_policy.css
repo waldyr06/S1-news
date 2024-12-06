@@ -15,7 +15,6 @@
     --FONTE_TITLE:"Playfair Display", serif;;
     --FONTE_SUBTITLE: "Roboto", sans-serif;
     --FONTE_PADRAO:"Inter", sans-serif;
-
 }
     header{
         margin: 0%;
@@ -29,7 +28,6 @@
         margin-top: 0.6%;
         display: flex;
         align-items: center;
-
     }
 
     .account_circle{
@@ -98,7 +96,6 @@ body{
     font-weight: 100;
 }
 
-
 .grid-item2{
     display: inline-block;
     position: relative;
@@ -120,7 +117,6 @@ body{
 .title2 h2 {
     font-size: 20px;
     font-weight: 100;
-
 }
 
 .image-report2{
@@ -167,7 +163,6 @@ body{
     top: 30%;
     left: 10%;
     margin: 20px;
-
 }
 
 .title3 h1 {
@@ -177,7 +172,6 @@ body{
 .title3 h2 {
     font-size: 17px;
     font-weight: 500;
-
 }
 
 .grid-item3 img{
@@ -197,4 +191,4 @@ body{
 .tira_hiperlink{
     text-decoration: none;
     color: black;
-  }
+}
