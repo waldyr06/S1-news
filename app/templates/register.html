@@ -19,29 +19,24 @@
             <h1>O melhor site de notícias</h1>
         </div>
         
-        <form action="register.html" method="POST">
+        <form action="{{ url_for('auth.register') }}" method="POST">
             <fieldset>
                 <div class="form-area">
                     <label for="name">Nome Completo</label>
-                    <input type="text" class="inputData" name="name" id="nomeCadastro" onblur="nameValidate()" required>
-                    <p class="dadoInvalido">Digite seu nome completo!</p>
+                    <input type="text" class="inputData" name="name" id="nomeCadastro" required>
                 </div>
-
+        
                 <div class="form-area">
                     <label for="email">Email</label>
-                    <input type="email" class="inputData" name="email" id="emailCadastro" autofocus onblur="emailValidate()" required>
-                    <p class="dadoInvalido">Digite um endereço de email válido!</p>
+                    <input type="email" class="inputData" name="email" id="emailCadastro" required>
                 </div>
-
+        
                 <div class="form-area">
                     <label for="password">Senha</label>
-                    <input type="password" class="inputData" name="senha" id="passwordCadastro" onblur="passwordValidate()" required>
-                    <p class="dadoInvalido">Sua senha deve ter entre 8 e 14 caracteres alfanuméricos!</p>
+                    <input type="password" class="inputData" name="senha" id="passwordCadastro" required>
                 </div>
-
-                <button id="cadastrar">Cadastrar-se</button>
-
-                <span id="temConta">Já possui uma conta? <a href="login.html">Entrar</a></span>
+        
+                <button id="cadastrar" type="submit">Cadastrar-se</button>
             </fieldset>
         </form>
     </main>

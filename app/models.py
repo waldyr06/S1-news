@@ -1,13 +1,19 @@
-from . import db
-import datetime
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+from flask_bcrypt import Bcrypt  # Importando o Bcrypt
 
-# Definindo o modelo
-class Report(db.Model):
+# Inicializando as instâncias do Flask e do SQLAlchemy
+db = SQLAlchemy()
+bcrypt = Bcrypt()  # Inicializando o Bcrypt
+
+class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    titulo = db.Column(db.String(100), nullable=False)
-    data = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
-    descricao = db.Column(db.Text, nullable=False)
-    reporter = db.Column(db.String(100), nullable=False)
+    name = db.Column(db.String(150), nullable=False)
+    email = db.Column(db.String(150), unique=True, nullable=False)
+    password_hash = db.Column(db.String(128), nullable=False)
 
-    def __repr__(self):
-        return f"<Report {self.titulo}>"
+    def set_password(self, password):
+        self.password_hash = bcrypt.generate_password_hash(password).decode('utf-8')  # Usando bcrypt para gerar o hash da senha
+
+    def check_password(self, password):
+        return bcrypt.check_password_hash(self.password_hash, password)  # Verificando a senha com bcrypt

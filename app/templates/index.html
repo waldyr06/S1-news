@@ -8,16 +8,16 @@
 </head>
 <body>
     <header>  
-        <a href="{{ url_for('policy_page') }}"><div class="botoes-noticias">
+        <a href="{{ url_for('content.policy_page') }}"><div class="botoes-noticias">
             <div id="politica">
                 <input type="button" value="Política">
             </div></a>
 
-            <a href="{{ url_for('sport_page') }}"><div id="esportes">
+            <a href="{{ url_for('content.sport_page') }}"><div id="esportes">
                 <input type="button" value="Esportes"> 
             </div></a>
 
-            <a href="{{ url_for('health_page') }}"><div id="saude">
+            <a href="{{ url_for('content.health_page') }}"><div id="saude">
                 <input type="button" value="Saúde"> 
             </div></a>
 
@@ -28,11 +28,11 @@
                
             </div>
             
-            <a href="{{ url_for('login_page') }}"><div id="login">
+            <a href="{{ url_for('auth.login') }}"><div id="login">
                 <input type="button" value="Login">
             </div></a>
 
-            <a href="{{ url_for('Cadastro_page') }}"><div id="cadastro">
+            <a href="{{ url_for('auth.register') }}"><div id="cadastro">
                 <input type="button" value="Cadastro">
             </div></a>
 
@@ -88,21 +88,21 @@
                     if(i === 1){
                         novobotao.value = "Botafogo ca...";
                         let link = document.createElement("a");
-                        link.href = "{{ url_for('esporte_report4_page') }}"; // Substitua pelo link adequado
+                        link.href = "{{ url_for('content.esporte_report4_page') }}"; // Substitua pelo link adequado
                         link.appendChild(novobotao);
                         div.appendChild(link);
                     }
                     else if(i === 2){
                         novobotao.value = "Aumento de...";
                         let link = document.createElement("a");
-                        link.href = "{{ url_for('preport1_page') }}"; // Substitua pelo link adequado
+                        link.href = "{{ url_for('content.preport1_page') }}"; // Substitua pelo link adequado
                         link.appendChild(novobotao);
                         div.appendChild(link);
                     }
                     else if(i === 3){
                         novobotao.value = "Impactos de...";
                         let link = document.createElement("a");
-                        link.href = "{{ url_for('reportsa1_page') }}"; // Substitua pelo link adequado
+                        link.href = "{{ url_for('content.reportsa1_page') }}"; // Substitua pelo link adequado
                         link.appendChild(novobotao);
                         div.appendChild(link);
                     }
