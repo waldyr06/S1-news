@@ -13,18 +13,18 @@
     <br>
     <div class="Assineja">
         <p> 
-            <a href="{{ url_for('Cadastro_page')}}" class="tira_hiperlink">
-            <label> Assine já </a>
-                <div class="account_circle">
-                    <img src="/static/images/account_circle.png">
-                </div> Conta S1 News</label>
+            <a href="{{ url_for('auth.register')}}" class="tira_hiperlink">
+                <label> Assine já </a>
+                    <div class="account_circle">
+                        <img src="/static/images/account_circle.png">
+                    </div> Conta S1 News</label>
         </p>    
     </div>
 </header>
 <div class="purpleheader">
     <p>
         <label>
-            <a href="{{ url_for('menu_page') }}"><div class="bars">
+            <a href="{{ url_for('content.menu_page') }}"><div class="bars">
                 <img src="/static/images/bars.png">
             </a>              
         </div>
@@ -42,7 +42,7 @@
 <br>
 <div class="conteiner1">
     <div class="coluna1">
-        <a href="{{ url_for('esporte_report4_page')}}" class="tira_hiperlink">
+        <a href="{{ url_for('content.esporte_report4_page')}}" class="tira_hiperlink">
         <img src="/static/images/botafogo.png" class="imagem1">
         <h1 class="titulo1">Botafogo garante título da Libertadores 2024 e entra para a história</h1>
         <h2 class="texto1">O Botafogo fez história na noite de 30 de novembro de 2024, ao conquistar
@@ -52,7 +52,7 @@
     </div>
 
     <div class="coluna2">
-        <a href="{{ url_for('esporte_report5_page')}}" class="tira_hiperlink">
+        <a href="{{ url_for('content.esporte_report5_page')}}" class="tira_hiperlink">
         <img src="/static/images/corinthians.png" class="image2">
         <h1 class="titulo2">Corinthians aumenta chances de classificação para a Libertadores 2025</h1>
         <h2 class="texto2">O Corinthians deu um passo importante em sua busca por uma vaga na Libertadores
@@ -61,7 +61,7 @@
     </div>
 
     <div class="coluna3">
-        <a href="{{ url_for('esporte_report6_page')}}" class="tira_hiperlink">
+        <a href="{{ url_for('content.esporte_report6_page')}}" class="tira_hiperlink">
         <img src="static/images/sport.png" class="image3">
         <h1 class="titulo3">Sport Club do Recife conquista acesso à Série A e faz história</h1>
         <h2 class="texto3">Após uma campanha consistente na Série B, o Sport Clube do Recife garantiu

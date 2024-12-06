@@ -13,7 +13,7 @@
     <br>
     <div class="Assineja">
         <p>
-            <a href="{{ url_for('Cadastro_page')}}" class="tira_hiperlink">
+            <a href="{{ url_for('auth.register')}}" class="tira_hiperlink">
                 <label> Assine já </a>
                     <div class="account_circle">
                         <img src="/static/images/account_circle.png">
@@ -24,7 +24,7 @@
 <div class="purpleheader">
     <p>
         <label>
-            <a href="{{ url_for('menu_page') }}"><div class="bars">
+            <a href="{{ url_for('content.menu_page') }}"><div class="bars">
                 <img src="/static/images/bars.png">
             </a>              
         </div>
@@ -40,7 +40,7 @@
     </p>
 </div>
 <div class="grid-container">
-        <a href="{{ url_for('reportsa1_page') }}"><div class="grid-item1">
+        <a href="{{ url_for('content.reportsa1_page') }}"><div class="grid-item1">
         <div class="image-report1">
         <img src="/static/images/betonline.png" height="670" width="530">
         </div>
@@ -51,7 +51,7 @@
         </a>
     </div>  
     
-        <a href="{{ url_for('reportsa2_page') }}"><div class="grid-item2">
+        <a href="{{ url_for('content.reportsa2_page') }}"><div class="grid-item2">
         <div class="image-report2">
         <img src="/static/images/trinity.jpg" height="320" width="600">
         </div>
@@ -64,7 +64,7 @@
     </div>
     <div class="grid-item3">
         <div class="image-report3">
-            <a href="{{ url_for('reportsa3_page') }}">
+            <a href="{{ url_for('content.reportsa3_page') }}">
             <img src="static/images/freecourses.png" height="320" width="600">
         </div>
         <div class="title3">
