@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S1 News - A sua fonte de informação</title>
-    <link rel="stylesheet" href="/static/css/style1.css">
+    <link rel="stylesheet" href="/static/css/style_index.css">
 </head>
 <body>
     <header>  
-        <a href="{{ url_for('politics_page')}}"><div class = "botoes-noticias">
+        <a href="{{ url_for('policy_page')}}"><div class = "botoes-noticias">
             <div id = "politica">
                 <input type="button" value="Política">
             </div></a>
 
-            <a href="{{ url_for('sports_page')}}"><div id = "esportes">
+            <a href="{{ url_for('sport_page')}}"><div id = "esportes">
                 <input type="button" value="Esportes"> 
             </div></a>
 
-            <a href="{{ url_for('healthy_page')}}"><div id = "saude">
+            <a href="{{ url_for('health_page')}}"><div id = "saude">
                 <input type="button" value="Saúde"> 
             </div></a>
 
@@ -38,8 +38,7 @@
             </div></a>
 
         </div>
-
-        
+  
     </header>
         
     <main>

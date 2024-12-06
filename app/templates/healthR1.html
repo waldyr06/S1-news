@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícias - Ministério da Saúde e Fazenda - Jogos de Azar</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_healthR.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <br>
+    <div class="Assineja">
+        <p>
+            <label>Assine já 
+                <div class="account_circle">
+                    <img src="/static/images/account_circle.png">
+                </div> Conta S1 News</label>
+        </p>    
+    </div>
+</header>
+<div class="purpleheader">
+    <p>
+        <label>
+            <a href="{{ url_for('menu_page') }}"><div class="bars">
+                <img src="/static/images/bars.png">
+            </a>              
+        </div>
+        <div class="menu">
+            <label style="color: white; margin-top: 100px;">menu</label>
+        </div></a>
+        </label>
+        <div class="whiteline">
+            <img src="/static/images/white-line.png" height="40" width="90">
+        </div>
+        <h1 class="S1" style="color: white; margin-left: 30px; margin-top: 2.4%;">S1</h1>
+        <div class="titulodapagina" style="color: white">Saúde</div>
+    </p>
+</div>
+
+<div class="main_text">
+    <div class="title_report">
+        <h1>Grupo interministerial avaliará impactos de apostas sobre saúde mental.</h1>
+    </div>
+    
+    <div class="subtitle_report">
+        <h3>Iniciativa abrangirá cooperação do Ministério da Saúde e da Fazenda.</h3>
+    </div>
+    <img class="image" src="{{ url_for('static', filename='images/gambling.jpg') }}">
+    <P>Como parte das iniciativas para mitigar os impactos de fenômenos contemporâneos na
+    saúde pública, o Ministério da Saúde, em cooperação com o Ministério da Fazenda, anunciou
+    a criação de um grupo interministerial para avaliar os efeitos das apostas esportivas e de
+    jogos de azar sobre a saúde mental da população.</P>
+    <P>A crescente preocupação com o aumento de casos de ansiedade, depressão e dependência
+    associados a esses tipos de atividades levou ao estabelecimento de medidas para abordar
+    os impactos desses comportamentos. O grupo interministerial trabalhará para entender melhor
+    como as apostas e os jogos de azar têm afetado a saúde mental dos brasileiros, especialmente
+    em um cenário de fácil acesso às plataformas digitais.</P>
+    <P>Essa cooperação mútua ambos ministérios visam estabelecer limites nesse meio que vem
+    provocando transtornos pelas tendências midiáticas e o aumento exponencial de casas de apostas.</P>
+    <p>"Estamos criando um sistema de proteção que vai além do cuidado individual, buscando
+    entender e regular os fatores sociais e econômicos que influenciam o bem-estar mental dos
+    brasileiros", concluiu a ministra Trindade.</P>
+    <h1>Efeitos</h1>
+    <P>As apostas e os jogos de azar têm mostrado uma relação direta com transtornos psicológicos,
+    especialmente em jovens e pessoas em situação de vulnerabilidade econômica. O fácil acesso a
+    plataformas digitais agrava o problema, permitindo o desenvolvimento de comportamentos compulsivos,
+    como o jogo patológico, que compromete finanças pessoais, relações familiares e, em casos extremos,
+    leva a quadros de ideação suicida.</P>
+    <P>Além disso, o estresse associado à perda de dinheiro e à pressão social pode desencadear outros
+    problemas, como insônia, abuso de substâncias e isolamento social.</P>
+    <h1>Compromisso social</h1>
+    <P>Essa iniciativa se soma aos esforços do Ministério da Saúde para lidar com problemas complexos
+    que afetam a saúde mental da população, como os impactos das queimadas e secas. Ambas as frentes
+    refletem um compromisso em enfrentar questões emergentes de maneira preventiva e coordenada.</P>
+    <P>A participação ativa da sociedade será essencial no combate a esses problemas. Denúncias de
+    práticas abusivas de publicidade, apoio a campanhas educativas e promoção do diálogo sobre saúde
+    mental são formas de contribuir para um ambiente mais saudável.</P>
+    <img class="image" src="{{ url_for('static', filename='images/healthmeeting.jpg') }}">
+</div>
+</body>

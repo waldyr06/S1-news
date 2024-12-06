@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notícia - Cursos de Estética</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_healthR.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <br>
+    <div class="Assineja">
+        <p>
+            <label>Assine já 
+                <div class="account_circle">
+                    <img src="/static/images/account_circle.png">
+                </div> Conta S1 News</label>
+        </p>    
+    </div>
+</header>
+<div class="purpleheader">
+    <p>
+        <label>
+            <a href="{{ url_for('menu_page') }}"><div class="bars">
+                <img src="/static/images/bars.png">
+            </a>              
+        </div>
+        <div class="menu">
+            <label style="color: white; margin-top: 100px;">menu</label>
+        </div></a>
+        </label>
+        <div class="whiteline">
+            <img src="/static/images/white-line.png" height="40" width="90">
+        </div>
+        <h1 class="S1" style="color: white; margin-left: 30px; margin-top: 2.4%;">S1</h1>
+        <div class="titulodapagina" style="color: white">Saúde</div>
+    </p>
+</div>
+
+<div class="main_text">
+    <div class="title_report">
+        Cursos de estética não oferecem formação para atividades de risco 
+    </div>
+    
+    <div class="subtitle_report">
+        <h3>Até 81% das vagas são vinculadas ao ensino a distância, diz CFM</h3>
+    </div>
+    <img class= "image" src="{{ url_for('static', filename='images/freecourses.png') }}">
+    <P>Dos 3.532 cursos de estética cadastrados no Sistema de Regulação do Ensino Superior (e-MEC)
+    do Ministério da Educação, 98% não exigem dos participantes formação em medicina – ainda que boa
+    parte das aulas se proponha a ensinar técnicas invasivas e de risco, como a aplicação de fenol e
+    de polimetilmetacrilato (PMMA).</P>
+    <P>Os números foram apresentados pelo Conselho Federal de Medicina (CFM) durante o durante o II
+    Fórum do Ato Médico. <br><br>  O levantamento mostra ainda que os cursos de estética oferecem mais
+    de 1,4 milhão de vagas – 81% delas vinculadas ao ensino à distância. Em junho, a influencer Natalia
+    Becker, proprietária de uma clínica de estética em São Paulo, foi acusada pela morte do empresário
+    Henrique Chagas. Á época, Natália informou ter feito um curso à distância para aplicar um procedimento
+    conhecido como peeling de fenol.</P>
+    <p>A proposta, segundo a entidade, é evitar o que ela se refere como “invasão de competências
+    exclusivas do médico”. No comunicado, o conselho cita ainda “um quadro de descontrole e de
+    desrespeito” à chamada Lei do Ato Médico e cobra a adoção de medidas urgentes para assegurar
+    a obediência ao que está previsto na legislação brasileira.</P>
+    <h1>Entenda</h1>
+    <P>A Lei 12.842/2013 ou Lei do Ato Médico prevê que procedimentos invasivos, sejam eles diagnósticos,
+    terapêuticos ou estéticos, caracterizados por inserções ou aplicações de substâncias que transpassam
+    as camadas superficiais da pele, devem ser realizados exclusivamente por médicos. “Isso reduz significativamente
+    as chances de exposição dos pacientes a efeitos deletérios”, avalia o CFM.</P>
+    <P>“Em uma simples busca na internet, é possível encontrar várias empresas oferecendo cursos
+    online de preenchimento de PMMA em diversas partes do corpo e peeling de fenol ‘profundo’ para
+    qualquer pessoa que deseja realizá-lo, sem qualquer restrição profissional. Alguns dos anunciantes,
+    se propõem a fazer a formação com a promessa de retorno financeiro aos inscritos e até liberando os
+    alunos de etapas anteriores à conclusão da atividade”, alertou a entidade.</P>
+    <h1>Cuidados</h1>
+    <P>O conselho ressalta que procedimentos estéticos invasivos, como a aplicação de fenol e de PMMA,
+    devem ser precedidos de consulta médica e de exames específicos. Outra orientação da entidade é que
+    os procedimentos sejam realizados em ambientes que respeitem as exigências da Agência Nacional de
+    Vigilância Sanitária (Anvisa) e do próprio CFM.</P>
+    <p>Para saber se um profissional está capacitado para realizar um procedimento estético invasivo,
+    a recomendação é que o paciente acesse o site do CFM ou do Conselho Regional de Medicina (CRM) de
+    seu estado, onde é possível fazer uma busca pelo nome do médico ou pelo número de registro no CRM.</p>
+    <img class= "image" src="{{ url_for('static', filename='images/capture77.png') }}">
+</div>
+
+</body>

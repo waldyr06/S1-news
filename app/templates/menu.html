@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="stylesheet" href="/static/css/stylemenu.css">
+    <link rel="stylesheet" href="/static/css/style_menu.css">
     <link href="https://fonts.googleapis.com/css2?family=Inria+Serif&display=swap" rel="stylesheet">
 </head>
 
@@ -38,16 +38,17 @@
             <h1 class="titulodapagina" style="color: white; margin-left: 40%; margin-top: 2.4%;">S1</h1>
         </p>
     </div>
+
     <main>
         <section class="redirect">
-            <a href="{{ url_for('politics_page') }}"><button class="politicsredirect"><div class="corbut">Política</div></button></a>
-            <a href="{{ url_for('healthy_page') }}"><button class="healthyredirect"><div class="corbut">Saúde</div></button></a>
-            <a href="{{ url_for('sports_page') }}"><button class="sportsredirect"><div class="corbut">Esportes</div></button></a>
+            <a href="{{ url_for('policy_page') }}"><button class="politicsredirect"><div class="corbut">Política</div></button></a>
+            <a href="{{ url_for('health_page') }}"><button class="healthyredirect"><div class="corbut">Saúde</div></button></a>
+            <a href="{{ url_for('sport_page') }}"><button class="sportsredirect"><div class="corbut">Esportes</div></button></a>
         </section>
         <section class="content">
             <a href="{{ url_for('reportsa2_page') }}"><div class="grid-item1">
             <div class="image-report1">
-            <img src="/static/images/trindade.jpg" height="320" width="700" ;>
+            <img src="/static/images/trinity.jpg" height="320" width="700" ;>
             </div>
             <div class="title1">
                 <h1>Saúde vai intensificar ações para mitigar efeito de queimadas e seca.</h1>
@@ -64,6 +65,5 @@
                 </div>
                 </a>
         </section>
-        
     </main>
 </body>

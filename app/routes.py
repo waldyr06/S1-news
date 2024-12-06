@@ -6,40 +6,40 @@ def init_app(app):
         return render_template('index.html')
     
     @app.route('/politics')
-    def politics_page():
-        return render_template('politics.html')
+    def policy_page():
+        return render_template('policy.html')
 
     @app.route('/politics/report1')
     def preport1_page():
-        return render_template('preport1.html')
+        return render_template('policyR1.html')
 
     @app.route('/politics/report2')
     def preport2_page():
-        return render_template('preport2.html')
+        return render_template('policyR2.html')
 
     @app.route('/politics/report3')
     def preport3_page():
-        return render_template('preport3.html')
+        return render_template('policyR3.html')
     
     @app.route('/esportes')
-    def sports_page():
-        return render_template('esportes.html')
+    def sport_page():
+        return render_template('sport.html')
     
     @app.route('/esportes/esporte4')
     def esporte_report4_page():
-        return render_template('ereport4.html')
+        return render_template('sportR1.html')
     
     @app.route('/esportes/esporte5')
     def esporte_report5_page():
-        return render_template('ereport5.html')
+        return render_template('sportR2.html')
     
     @app.route('/esportes/esporte6')
     def esporte_report6_page():
-        return render_template('ereport6.html')
+        return render_template('sportR3.html')
 
     @app.route('/cadastro')
     def Cadastro_page():
-        return render_template('Cadastro.html')
+        return render_template('register.html')
 
     @app.route('/login')
     def login_page():
@@ -50,17 +50,17 @@ def init_app(app):
         return render_template('menu.html')
 
     @app.route('/saude')
-    def healthy_page():
-        return render_template('teladesaude.html')
+    def health_page():
+        return render_template('health.html')
     
     @app.route('/saude/reportsa1')
     def reportsa1_page():
-        return render_template('reportsaude1.html')
+        return render_template('healthR1.html')
 
     @app.route('/saude/reportsa2')
     def reportsa2_page():
-        return render_template('reportsaude2.html')
+        return render_template('healthR2.html')
 
     @app.route('/saude/reportsa3')
     def reportsa3_page():
-        return render_template('reportsaude3.html')
+        return render_template('healthR3.html')
