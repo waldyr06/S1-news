@@ -94,9 +94,9 @@ header{
 }
 
 .sportsredirect{
-    background-image: url(https://www.meupositivo.com.br/doseujeito/wp-content/uploads/2023/01/Futebol-conheca-a-historia-e-as-regras.jpg);
+    background-image: url(https://stampagramas.com.br/wp-content/uploads/2023/02/2023-03-13-regras-do-futebol-society.jpg);
     background-size: 100%;
-    filter: brightness(55%);
+    filter: brightness(65%);
     font-family: "Inter", sans-serif;
     font-size: 20px;
     visibility: 100%;
@@ -107,7 +107,7 @@ header{
     border-color: azure;
 }
 .corbut{
-    color: rgb(0, 255, 221);
+    color: rgb(255, 255, 255);
 }
 .content {
     display: grid;
@@ -153,6 +153,9 @@ h2{
 }
 .image-report1{
     filter: brightness(30%);
+}
+.image-report1 img{
+    border-radius: 50%;
 }
 .grid-item2{
     display: inline-block;

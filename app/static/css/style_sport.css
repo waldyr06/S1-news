@@ -84,6 +84,9 @@ body{
     display: grid; /* Ativa o Grid Layout */
     grid-template-columns: 1fr 1fr 1fr; /* Três colunas iguais */
     gap: 20px; /* Espaçamento entre as colunas */
+    grid-template-areas: "coluna1 coluna2 coluna3";
+          
+
 }
   
   .imagem1 {
@@ -91,11 +94,14 @@ body{
     height: auto; /* Mantém a proporção original da imagem */
     grid-column: 1 / 2; /* Garante que a imagem fique na primeira coluna */
     filter: brightness(50%);
+    border-radius: 15%;
   }
 
   .coluna1 {
     /* Coluna 1, onde ficará o título e o texto */
-    padding: 10px;
+    padding: 4px;
+    grid-area: coluna1;
+    border-radius: 10%;
   }
 
   .titulo1 {
@@ -111,7 +117,9 @@ body{
 
   .coluna2 {
     /* Coluna 2, onde ficará o título e o texto */
-    padding: 10px;
+    padding: 4px;
+    grid-area: coluna2;
+    border-radius: 10%;
   }
 
   .image2 {
@@ -119,6 +127,8 @@ body{
     height: auto; /* Mantém a proporção original da imagem */
     grid-column: 2 / 2; /* Garante que a imagem fique na primeira coluna */
     filter: brightness(50%);
+    border-radius: 15%;
+    
   }
 
   .titulo2 {
@@ -133,7 +143,9 @@ body{
   }
 
   .coluna3{
-    padding: 10px;
+    padding: 4px;
+    grid-area: coluna3;
+    border-radius: 10%;
   }
 
   .image3{
@@ -141,6 +153,7 @@ body{
     height: auto;
     grid-column: 3 / 3;
     filter: brightness(50%);
+    border-radius: 15%;
   }
 
   .titulo3{

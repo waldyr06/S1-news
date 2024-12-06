@@ -119,14 +119,21 @@ h2{
     grid-column: 2 / 3;
     grid-row: 1;
 }
+
+.grid-item2 img{
+    border-radius: 20px;
+}
 .grid-item3 {
     grid-column: 2 / 3;
     grid-row: 2;
-}
-.grid-item3 {
     display: inline-block;
     position: relative;
 }
+
+.grid-item3 img{
+    border-radius: 20px;
+}
+
 .title3{
     color: white;
     position: absolute;
