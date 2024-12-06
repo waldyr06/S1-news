@@ -10,6 +10,8 @@ instalar:
 - Flask_sqlalchemy
 - flask_bcrypt
 - flask_migrate
+- flask_login
+- flask_mysqldb
 
   # Como executar?
 
