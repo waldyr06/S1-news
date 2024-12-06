@@ -10,42 +10,33 @@
 </head>
 
 <body>
-    <div id="bg-image">
-    </div>
+    <div id="bg-image"></div>
 
     <main>
         <div id="logos">
-
-           <h1>S1 News</h1>
-           <h1>O melhor site de notícias</h1>
-
+            <h1>S1 News</h1>
+            <h1>O melhor site de notícias</h1>
         </div>
-        <form action="login.html" method="POST">
 
+        <form action="/login" method="POST"> <!-- Corrigido o action para /login -->
             <fieldset>
                 <div class="form-area">
-
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" autofocus required>
-
                 </div>
-                <div class="form-area">
 
+                <div class="form-area">
                     <label for="password">Senha</label>
                     <input type="password" name="senha" id="password" required>
                     <a id="esqueceusenha" href="#">Esqueceu a senha?</a>
-
                 </div>
 
                 <button id="login">Login</button>
-
             </fieldset>
             
             <p id="connect">ou</p>
             <p id="cadastro">Não tem conta? <a href="Cadastro.html">Cadastre-se</a></p>
-
         </form>
-
     </main>
 </body>
 

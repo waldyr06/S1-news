@@ -11,8 +11,7 @@
 
 <body>
     <!-- Removendo a imagem de fundo anterior -->
-    <div id="bg-image" style="display: none;">
-    </div>
+    <div id="bg-image" style="display: none;"></div>
 
     <main>
         <div id="logos">
@@ -20,11 +19,12 @@
             <h1>O melhor site de notícias</h1>
         </div>
         
-        <form action="Cadastro.html" method="POST">
+        <!-- Formulário de Cadastro -->
+        <form action="/register" method="POST">
             <fieldset>
                 <div class="form-area">
-                    <label for="name">Nome Completo</label>
-                    <input type="text" class="inputData" name="name" id="nomeCadastro" onblur="nameValidate()" required>
+                    <label for="nome_completo">Nome Completo</label>
+                    <input type="text" class="inputData" name="nome_completo" id="nomeCadastro" onblur="nameValidate()" required>
                     <p class="dadoInvalido">Digite seu nome completo!</p>
                 </div>
 
@@ -35,7 +35,7 @@
                 </div>
 
                 <div class="form-area">
-                    <label for="password">Senha</label>
+                    <label for="senha">Senha</label>
                     <input type="password" class="inputData" name="senha" id="passwordCadastro" onblur="passwordValidate()" required>
                     <p class="dadoInvalido">Sua senha deve ter entre 8 e 14 caracteres alfanuméricos!</p>
                 </div>
@@ -48,5 +48,5 @@
     </main>
 </body>
 
-<script src="/S1-news/app/scripts/cadastro.js"></script>
+<script src="/static/js/cadastro.js"></script>
 </html>
